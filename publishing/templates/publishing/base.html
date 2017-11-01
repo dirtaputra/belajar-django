@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block site_title %}Publishing Site{% endblock %}</title>
+</head>
+<body>
+
+ <ul>
+ 	<li><a href="{% url 'home' %}">Home</a></li>
+ 	<li><a href="{% url 'publisher_list' %}">Publishers</a></li>
+
+ </ul>
+ 	{% block content %}
+
+ 	{% endblock %}
+ 	</div>
+ 	
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'publishing/base.html' %}
+
+{% block site_title %}Publisher List{% endblock %}
+
+{% block content %}
+Isinya daftar publisher
+{% if publisher_list %}
+<ol>
+	{% for publisher in publisher_list %}
+		<li><a href="{% url 'publisher_detail' publisher.id %}">{{publisher.name}}</a></li>
+	{% endfor %}
+</ol>
+{% endif %}
+{% endblock %}

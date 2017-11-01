@@ -1,0 +1,9 @@
+{% extends 'publishing/base.html' %}
+
+{% block site_title %}{{ publisher.name }}{% endblock %}
+
+{% block content %}
+<h1>{{ publisher.name }}</h1>
+address : {{publisher.address}}<br>
+{{ massage }}
+{% endblock %}

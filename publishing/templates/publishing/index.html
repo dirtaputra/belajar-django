@@ -1,0 +1,12 @@
+{% extends 'publishing/base.html'%}
+
+{% block site_title %}{{title}}{% endblock %}
+{% block content %}
+ Welcome to {{site_name}}
+ 	<div>
+ 		<h1>{{ title }}</h1>
+ 	</div>
+ 	<div>
+ 		{{ content }}
+ 	</div>
+{% endblock %}
